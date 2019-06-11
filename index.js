@@ -19,3 +19,17 @@ function produceTipCalculator(percentage){
         return percentage * tip;
     }
 }
+
+function createDriver() {
+    let DriverId = 0;
+    // return the class
+    return class {
+      constructor(name) {
+        this.name = name;
+        
+        this.id = ++DriverId;
+      }
+    };
+  }
+   
+//   const Driver = createDriver();
